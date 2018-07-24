@@ -16,6 +16,14 @@ class person {
         
         return yearsLeft;    
     }
+    
+    int getAge(); {
+        return age;
+    }
+    String getName(); {
+        return name;
+    }
+    
      public static void main(String []args){
          person person1 = new person();
      
@@ -26,6 +34,13 @@ class person {
          int years = person1.calculateYearsToRetirement();
          
          System.out.println("Years to go before retirement " + years);
+         
+         int age = person1.getAge();
+         
+         String name = person1.getName();
+         
+         System.out.println("Name: " + name);
+         System.out.println("Current age is: " + age);
      }
      
 }
